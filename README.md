@@ -30,21 +30,6 @@ A RESTful API for managing Pokémon decks and favorites with integration to the 
   }
   ```
 
-#### Get User Decks
-- **GET** `/api/users/:userId/decks`
-- **Response:**
-  ```json
-  [
-    {
-      "id": "deck_id",
-      "name": "Water Squad",
-      "pokemons": ["squirtle", "gyarados"],
-      "isPlayable": false,
-      "createdAt": "2025-06-20T10:00:00.000Z"
-    }
-  ]
-  ```
-
 #### Update Deck
 - **PUT** `/api/decks/:deckId`
 - **Body:**
