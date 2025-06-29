@@ -71,7 +71,7 @@ A RESTful API for managing Pokémon decks and favorites with integration to the 
   ```
 
 #### Get User Favorites
-- **GET** `/api/users/:userId/favorites`
+- **GET** `/api/favorites/user/:userId/favorites`
 - **Response:**
   ```json
   [
@@ -86,13 +86,13 @@ A RESTful API for managing Pokémon decks and favorites with integration to the 
   ```
 
 #### Get Low HP Favorites (HP < 50)
-- **GET** `/api/favorites/users/:userId/favorites/low-hp`
+- **GET** `/api/favorites/user/:userId/favorites/low-hp`
 
 #### Get Legendary Favorites
-- **GET** `/api/favorites/users/:userId/favorites/legendary`
+- **GET** `/api/favorites/user/:userId/favorites/legendary`
 
 #### Remove from Favorites
-- **DELETE** `/api/favorites/users/:userId/pokemon/:pokemon`
+- **DELETE** `/api/favorites/user/:userId/pokemon/:pokemon`
 
 ### please check postman collection
 
